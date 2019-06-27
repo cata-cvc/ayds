@@ -1,0 +1,41 @@
+{% extends "menu.html" %}
+{% block body %}
+<form action="/ingreso" method="POST">
+  <fieldset>
+    <legend>Formulario de ingreso de producto</legend>
+      <div class="form-group">
+      <input type="number" class="form-control" name="cantidad" placeholder="Cantidad">
+    </div>
+    <div class="form-group">
+      <label for="exampleSelect1">Código</label>
+      <select class="form-control" id="exampleSelect1">
+        <option>1234</option>
+        <option>1244</option>
+        <option>7535</option>
+        <option>9182</option>
+        <option>9876</option>
+      </select>
+    </div>
+    <div>
+      <input type="text" class="form-control" name="proveedor" placeholder="Proveedor">
+    </div>
+    <div class="form-group">
+      <label for="exampleSelect1">Sucursal</label>
+      <select class="form-control" id="exampleSelect1">
+        <option>San Fernando 1</option>
+        <option>San Fernando 2</option>
+        <option>San Fernando 3</option>
+        <option>San Vicente</option>
+        <option>Rengo</option>
+        <option>Chimbarongo</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <input type="date" class="form-control" name="fecha" placeholder="Fecha">
+    </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Ingreso</button>
+  </fieldset>
+</form>
+{% endblock %}

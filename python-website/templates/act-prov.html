@@ -1,0 +1,32 @@
+{% extends "menu.html" %}
+{% block body %}
+<form>
+  <fieldset>
+    <legend>Actualización de proveedor</legend>
+      <div class="form-group">
+      <label for="nombre">Proveedor</label>
+      <input type="text" class="form-control" id="nombre" placeholder="Nombre proveedor/empresa">
+    </div>
+      <div class="form-group">
+      <label for="correo">Correo</label>
+      <input type="email" class="form-control" id="correo" placeholder="Correo proveedor/empresa">
+    </div>
+
+    <form>
+  <fieldset>
+    <legend>Nuevo producto</legend>
+      <div class="form-group">
+      <input type="number" class="form-control" name="cantidad" placeholder="Cantidad mínima">
+    </div>
+         <input type="text" class="form-control" name="proveedor" placeholder="Código">
+    </div>
+    <center>
+      <h1> </h1>
+      <button type="submit" class="btn btn-primary">Actualizar</button>
+    </center>
+
+  </fieldset>
+</form>
+  </fieldset>
+
+{% endblock %}
